@@ -1,0 +1,8 @@
+.bottle{
+    border: 2px solid goldenrod;
+    margin: 20px;
+    padding: 20px;
+}
+.bottle img {
+    width: 200px;
+}
