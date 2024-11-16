@@ -17,4 +17,12 @@ const addToLs = id => {
     saveToLs(cart);
 }
 
-export {addToLs , getStoredCart};
+const removeItem = (id) => {
+    const cart = getStoredCart();
+    console.log("22" , cart);
+    const remaining = cart.filter((idx) => idx !== id);
+    
+    saveToLs(remaining);
+}
+
+export {addToLs , getStoredCart , removeItem};
